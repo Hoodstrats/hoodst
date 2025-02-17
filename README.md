@@ -33,24 +33,12 @@
 - Changed: Border to 0 since i3 will take care of that for us 
 - Added: Delete key patch (makes backspace and delete work appropiately...not sure why this isn't a thing by default)
 ---
-## Suggestions
-#### Making ST selectable as the default terminal emulator in UBUNTU
+#### Suggestions
+##### Making ST selectable as the default terminal emulator in UBUNTU
 - sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/local/bin/st 50
     - the 50 gives it priority above the other terminals in the list
     - then run and choose st from list: 
         - sudo update-alternatives --config x-terminal-emulator
----
-#### Where all the files are written to when you compile 
--mkdir -p /usr/local/bin
--cp -f st /usr/local/bin
--chmod 755 /usr/local/bin/st
--mkdir -p /usr/local/share/man/man1
--sed "s/VERSION/0.9.2/g" < st.1 > /usr/local/share/man/man1/st.1
--chmod 644 /usr/local/share/man/man1/st.1
--tic -sx st.info
--7 entries written to /etc/terminfo
--Please see the README file regarding the terminfo entry of st.
-
 ---
 # Original README
 st - simple terminal
