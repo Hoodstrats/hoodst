@@ -24,7 +24,7 @@
 - "Mod1Mask" is the alt key and "ShiftMask" is the Shift key. 
     - in the config.h file there are references to Mod1Mask >>>> can use this in place of ctrl or shift
 ---
-## PATCHES MADE SO FAR TO ST
+## PATCHES I MADE SO FAR TO ST
 - Added: Themes folder with gruvbox.h 
     - the header file contains the entire theme patch, removed stock colors in default config.h 
     - just added #include "./themes/gruvbox.h" in place of stock theme lines 
@@ -41,15 +41,15 @@
         - sudo update-alternatives --config x-terminal-emulator
 ---
 #### Where all the files are written to when you compile 
-mkdir -p /usr/local/bin
-cp -f st /usr/local/bin
-chmod 755 /usr/local/bin/st
-mkdir -p /usr/local/share/man/man1
-sed "s/VERSION/0.9.2/g" < st.1 > /usr/local/share/man/man1/st.1
-chmod 644 /usr/local/share/man/man1/st.1
-tic -sx st.info
-7 entries written to /etc/terminfo
-Please see the README file regarding the terminfo entry of st.
+-mkdir -p /usr/local/bin
+-cp -f st /usr/local/bin
+-chmod 755 /usr/local/bin/st
+-mkdir -p /usr/local/share/man/man1
+-sed "s/VERSION/0.9.2/g" < st.1 > /usr/local/share/man/man1/st.1
+-chmod 644 /usr/local/share/man/man1/st.1
+-tic -sx st.info
+-7 entries written to /etc/terminfo
+-Please see the README file regarding the terminfo entry of st.
 
 ---
 # Original README

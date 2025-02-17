@@ -1,0 +1,8 @@
+*.orig
+FAQ
+LEGACY
+TODO
+config.def.h
+st
+suckless.md
+.vscode/
